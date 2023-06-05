@@ -1,0 +1,46 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0%;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    width: 100%;
+}
+.formreply{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 0.5em;
+    border: 2px solid lightgray;
+    border-radius: 40px;
+    background-color: lightgray;
+}
+textarea{
+    width: 100%;
+    border-color: lightgray;
+    margin: 0.2em;
+    background-color: lightgray;
+    resize: none;
+
+
+}
+input[type="submit"]{
+    margin: 0%;
+    height: 100%;
+    padding: 0.2em 0.5em;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    background-color: red;
+    border-radius: 50px;
+    border-style: none;
+}
