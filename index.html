@@ -9,17 +9,21 @@
 </head>
 <body>
     <div class="container">
-        <ul class="comments">
-
+        <ul id="comments">
         </ul>
-         <form action="/action_page.php">
-          <div class="formreply">
-            <textarea id="replyid" name="reply" rows="4" >
-            </textarea>
+         <form action="" id="formid">
+           <div id="formreply">            
+            <select name="photo" id="userphoto">
+             <option value="Bill">&#128122;</option>
+             <option value="Hill Billy">&#128103;</option>
+             <option value="Redneck">&#128131;</option>
+            </select>
+
+            <textarea id="replyid" name="reply" rows="4" ></textarea>
             <input type="submit" value="&#8593;">
           </div>
          </form> 
     </div>
-    <script src="mytypefile.ts"></script>
+    <script src="mytypefile.js"></script>
 </body>
 </html>

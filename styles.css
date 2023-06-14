@@ -13,7 +13,7 @@ body{
 form{
     width: 100%;
 }
-.formreply{
+#formreply{
     width: 100%;
     display: flex;
     flex-direction: row;
@@ -23,15 +23,17 @@ form{
     border: 2px solid lightgray;
     border-radius: 40px;
     background-color: lightgray;
+    margin: 0.5em;
 }
 textarea{
     width: 100%;
-    border-color: lightgray;
+    border-style: none;
     margin: 0.2em;
     background-color: lightgray;
     resize: none;
-
-
+}
+textarea:focus, input:focus{
+    outline: none;
 }
 input[type="submit"]{
     margin: 0%;
@@ -43,4 +45,44 @@ input[type="submit"]{
     background-color: red;
     border-radius: 50px;
     border-style: none;
+    cursor: pointer;
+}
+#comments{
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+#comments li{
+    display: grid;
+    grid-template-columns: auto 5fr;
+    grid-template-rows: 1fr 1fr;
+    width: 100%;
+    margin-bottom: 1.5em;
+}
+#comments li p{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-family: sans-serif;
+}
+#comments li p:first-child{
+    grid-row: 1 / span 2;
+    font-size: 2rem;
+    background-color: rgb(224, 204, 178);
+    border-radius: 50px;
+    padding: 0.5em;
+    margin-right: 0.5em;
+    text-align: center;
+}
+#comments li p:nth-child(2){
+    align-self: end;
+}
+#comments li p:nth-child(3){
+    font-size: 2rem;
+}
+#userphoto{
+    font-size: 4rem;
+    border-radius: 50px;    
 }
